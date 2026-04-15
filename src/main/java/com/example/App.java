@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) {
 
         ChromeOptions options = new ChromeOptions();
-
+        options.setBinary("/usr/bin/google-chrome");
         // 🔥 Required for Jenkins/Linux
         options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
