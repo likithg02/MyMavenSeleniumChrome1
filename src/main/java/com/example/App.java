@@ -15,7 +15,7 @@ public class App {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--remote-allow-origins=*");
-
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver(options);
 
         driver.get("https://www.saucedemo.com/");
